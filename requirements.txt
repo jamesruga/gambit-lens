@@ -1,0 +1,18 @@
+# Core Engine & Ingestion
+requests>=2.31.0
+pandas>=2.0.0
+numpy>=1.24.0
+python-chess>=1.9.0
+
+# MLOps, Tracking & Explainability
+mlflow>=2.10.0
+shap>=0.44.0
+pydantic>=2.0.0
+
+# GenAIOps & Agents
+groq>=0.4.0
+
+# Testing & Quality
+pytest>=8.0.0
+pytest-cov>=4.1.0
+
