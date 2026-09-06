@@ -1,5 +1,5 @@
 # GambitLens ♟️🔍
-[![Daily Pipeline](https://github.com/jamesruga/GambitLens/actions/workflows/daily_pipeline.yml/badge.svg)](https://github.com/jamesruga/GambitLens/actions/workflows/daily_pipeline.yml)
+[![Daily Pipeline](https://github.com/jamesruga/gambit-lens/actions/workflows/daily_pipeline.yml/badge.svg)](https://github.com/jamesruga/gambit-lens/actions/workflows/daily_pipeline.yml)
 ![Python Version](https://img.shields.io/badge/python-3.11%20%7C%203.14-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![MLOps](https://img.shields.io/badge/MLOps-Automated-orange)
@@ -58,7 +58,7 @@ Full test logs are archived in [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md).
 ## ⚡ Quick Start
 ```bash
 # Clone repository
-git clone [https://github.com/jamesruga/GambitLens.git](https://github.com/jamesruga/GambitLens.git)
+git clone [https://github.com/jamesruga/gambit-lens.git](https://github.com/jamesruga/gambit-lens.git)
 cd GambitLens
 # Install lightweight dependencies
 pip install -r requirements.txt
