@@ -19,4 +19,4 @@ tests/test_visuals.py::test_generate_centipawn_drift_svg PASSED          [100%]
     class EventLoopPolicy(asyncio.AbstractEventLoopPolicy):
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-========================= 7 passed, 1 warning in 2.00s =========================
+========================= 7 passed, 1 warning in 2.21s =========================
