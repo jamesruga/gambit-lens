@@ -1,4 +1,4 @@
-# gambit-lens ♟️🔍
+# GambitLens ♟️🔍
 
 [![Daily Pipeline](https://github.com/jamesruga/gambit-lens/actions/workflows/daily_pipeline.yml/badge.svg)](https://github.com/jamesruga/gambit-lens/actions/workflows/daily_pipeline.yml)
 ![Python Version](https://img.shields.io/badge/python-3.11%20%7C%203.14-blue)
