@@ -69,7 +69,7 @@ In competitive chess, high-level engines like Stockfish output raw numeric evalu
 | `visuals.py` | Pure-Python SVG diagnostic chart generator | ✅ **Passed** |
 | `agent.py` | LLM tactical coaching explanation fallback loop | ✅ **Passed** |
 
-<small><small><i>Full test logs are archived in [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md).</i></small></small>
+<sub>*Full test logs are archived in [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md).*</sub>
 ---
 
 ## ⚡ Quick Start
