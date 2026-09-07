@@ -19,29 +19,29 @@ In competitive chess, high-level engines like Stockfish output raw numeric evalu
 ## 🏗️ Production System Architecture
 
 ```text
-┌──────────────────┐
-│ Lichess REST API │
-└────────┬─────────┘
-         │
-         v
-┌──────────────────┐
-│ Feature Pipeline │
-└────────┬─────────┘
-         │
-         v
-┌──────────────────┐
-│ Blunder Model    │
-└────────┬─────────┘
-         │
-         v
-┌──────────────────┐
-│ Pure SVG Charts  │
-└────────┬─────────┘
-         │
-         v
-┌──────────────────┐
-│ Groq LLM Agent   │
-└──────────────────┘
+┌─────────────────────────────────────────┐
+│ 1. Data Ingestion (src/ingestion.py)    │
+└────────────────────┬────────────────────┘
+                     │ Lichess PGN stream
+                     v
+┌─────────────────────────────────────────┐
+│ 2. Feature Engineering (src/features.py)│
+└────────────────────┬────────────────────┘
+                     │ Centipawn loss / CPL
+                     v
+┌─────────────────────────────────────────┐
+│ 3. Model Training (src/model.py)        │
+└────────────────────┬────────────────────┘
+                     │ Blunder classification
+                     v
+┌─────────────────────────────────────────┐
+│ 4. Diagnostic Visuals (src/visuals.py)  │
+└────────────────────┬────────────────────┘
+                     │ Pure SVG telemetry
+                     v
+┌─────────────────────────────────────────┐
+│ 5. Tactical Agent (src/agent.py)        │
+└─────────────────────────────────────────┘
 ```
 ---
 
