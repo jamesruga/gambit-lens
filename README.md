@@ -48,12 +48,12 @@ In competitive chess, high-level engines like Stockfish output raw numeric evalu
 ## 📊 Live System Telemetry & Diagnostics
 
 ### Centipawn Evaluation Drift
-![Centipawn Evaluation Drift](assets/centipawn_drift.svg)
+![Centipawn Evaluation Drift](https://raw.githubusercontent.com/jamesruga/gambit-lens/main/assets/centipawn_drift.svg)
 > **Data Source**: Extracted from Lichess game PGN evaluation comments (`[%eval ...]`).  
 > **How to Read**: The blue line tracks centipawn evaluation across game plies. The highlighted red dot marks a critical evaluation drop (blunder point), illustrating how quickly a winning or even position shifts.
 
 ### Move Clock Duration Telemetry
-![Move Clock Duration Telemetry](assets/move_time_telemetry.svg)
+![Move Clock Duration Telemetry](https://raw.githubusercontent.com/jamesruga/gambit-lens/main/assets/move_time_telemetry.svg)
 > **Data Source**: Extracted from Lichess move clock timestamps (`[%clk ...]`).  
 > **How to Read**: The vertical bars represent time spent (in seconds) on each specific ply. Spikes (such as on move `g4`) highlight critical decision points or time pressure preceding major tactical mistakes.
 
