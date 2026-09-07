@@ -3,6 +3,8 @@
 [![GambitLens Daily Automation](https://github.com/jamesruga/gambit-lens/actions/workflows/daily_pipeline.yml/badge.svg)](https://github.com/jamesruga/gambit-lens/actions/workflows/daily_pipeline.yml)
 [![python](https://img.shields.io/badge/python-3.11%20%7C%203.14-blue)](https://www.python.org/)
 [![license](https://img.shields.io/badge/license-MIT-green)](https://opensource.org/licenses/MIT)
+[![MLOps](https://img.shields.io/badge/MLOps-Automated-orange)](https://ml-ops.org/)
+[![LLM](https://img.shields.io/badge/LLM-Groq%20Llama3-purple)](https://groq.com/)
 
 An open-source MLOps engine that ingests raw move-level chess telemetry from Lichess, trains automated blunder classifiers, and generates natural-language tactical coaching with pure-SVG diagnostic charts.
 
