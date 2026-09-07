@@ -6,7 +6,7 @@
 [![MLOps](https://img.shields.io/badge/MLOps-Automated-orange)](https://ml-ops.org/)
 [![LLM](https://img.shields.io/badge/LLM-Groq%20Llama3-purple)](https://groq.com/)
 
-An open-source MLOps engine that ingests raw move-level chess telemetry from [Lichess](https://lichess.org/), trains automated blunder classifiers, and generates natural-language tactical coaching with pure-SVG diagnostic charts.
+An open-source MLOps engine that ingests raw move-level chess telemetry from [Lichess](https://lichess.org/), extracts game phase dynamics (opening/middlegame/endgame), trains blunder classifiers, and generates natural-language tactical coaching with pure-SVG diagnostic charts.
 
 ---
 
