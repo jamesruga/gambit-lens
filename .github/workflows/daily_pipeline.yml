@@ -33,4 +33,4 @@ jobs:
           git config --global user.email "jamesruga07@gmail.com"
           git add assets/
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: update daily diagnostic telemetry assets"
-          git push
+          git push origin HEAD:main
