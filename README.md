@@ -48,7 +48,7 @@ In competitive chess, high-level engines like Stockfish output raw numeric evalu
 ## 📊 Live System Telemetry & Diagnostics
 
 ### Centipawn Evaluation Drift
-![Centipawn Evaluation Drift](https://raw.githubusercontent.com/jamesruga/gambit-lens/main/assets/centipawn_drift.svg)
+![Centipawn Evaluation Drift](https://raw.githubusercontent.com/jamesruga/gambit-lens/main/assets/centipawn_drift.svg?v=2)
 > **Data Source**: Extracted from Lichess game PGN evaluation comments (`[%eval ...]`).  
 > **How to Read**: The blue line tracks centipawn evaluation across game plies. The highlighted red dot marks a critical evaluation drop (blunder point), illustrating how quickly a winning or even position shifts.
 
@@ -69,7 +69,7 @@ In competitive chess, high-level engines like Stockfish output raw numeric evalu
 | `visuals.py` | Pure-Python SVG diagnostic chart generator | ✅ **Passed** |
 | `agent.py` | LLM tactical coaching explanation fallback loop | ✅ **Passed** |
 
-Full test logs are archived in [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md).
+<small><i>Full test logs are archived in [`docs/TEST_RESULTS.md`](docs/TEST_RESULTS.md).</i></small>
 ---
 
 ## ⚡ Quick Start
