@@ -46,6 +46,7 @@ class DiagnosticVisualizer:
         area_path = f"M {get_x(0):.1f},{zero_y:.1f} L " + " L ".join(path_points) + f" L {get_x(len(plies)-1):.1f},{zero_y:.1f} Z"
 
         svg_content = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="100%" style="background-color: #0d1117; border-radius: 10px; border: 1px solid #30363d;">
+    <text x="{margin_left}" y="35" fill="#e6edf3" font-size="14" font-weight="bold" font-family="sans-serif">GambitLens - Centipawn Drift Analysis</text>
     <path d="{area_path}" fill="#58a6ff" fill-opacity="0.2" />
     <path d="{line_path}" fill="none" stroke="#58a6ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     {"".join(dots_svg)}{"".join(labels_svg)}
