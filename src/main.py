@@ -1,6 +1,6 @@
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from src.features import extract_centipawn_drift
 from src.visuals import DiagnosticVisualizer
 from src.agent import TacticalAgent
@@ -13,7 +13,7 @@ logging.basicConfig(
 
 def log_event(event_type: str, details: dict):
     logging.info(json.dumps({
-        "timestamp": datetime.utcnow().isoformat(),
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "event": event_type,
         "details": details
     }))
@@ -34,7 +34,7 @@ def run_pipeline():
     log_event("ASSET_GENERATION", {"asset": drift_path})
     
     agent = TacticalAgent()
-    analysis = agent.analyze_move(ply=3, move_san='g4')
+    analysis = agent.explain_blunder({'ply': 3, 'move_san': 'g4', 'game_phase': 'opening'})
     log_event("LLM_INFERENCE", {"ply": 3, "len": len(analysis)})
     log_event("PIPELINE_COMPLETE", {"status": "success"})
 
